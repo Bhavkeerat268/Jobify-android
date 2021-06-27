@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--in this we are displaying a nested scroll view-->
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idNestedSV"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.training.jobifi.activity.DashboardActivity">
+
+    <!--linear layout for displaying
+        our recycler view-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="70sp"
+            android:id="@+id/imgNodata"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:layout_gravity="center_horizontal"
+                android:layout_width="130sp"
+                android:layout_height="130sp"
+                android:src="@drawable/nodata"
+                />
+            <TextView
+                android:textColor="#000"
+                android:layout_margin="20sp"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Jobs Available"/>
+        </LinearLayout>
+
+        <!--recycler view for displaying our list of data
+            and we are making nested scroll for our
+            recycler view as false-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/recyclerHome"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="false"
+            tools:listitem="@layout/single_item_layout"
+            />
+
+        <ProgressBar
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/progressRecs"/>
+        <com.facebook.shimmer.ShimmerFrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shimmer_layout">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <include
+                    layout="@layout/item_shimmer"/>
+                <include
+                    layout="@layout/item_shimmer"/>
+                <include
+                    layout="@layout/item_shimmer"/>
+                <include
+                    layout="@layout/item_shimmer"/>
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

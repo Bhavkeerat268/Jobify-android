@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/non_skilled"
+    tools:context="com.training.jobifi.fragment.NonSkilledWorkFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+       <com.nex3z.flowlayout.FlowLayout
+           android:id="@+id/skilledFlow"
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:flChildSpacing="10sp"
+           app:flFlow="true"
+           app:flChildSpacingForLastRow="align"
+           app:flRowSpacing="10sp">
+
+           <TextView
+               android:id="@+id/carWash"
+               android:background="@drawable/flow_btn"
+               android:padding="10sp"
+               android:textColor="@color/appBlue"
+               android:textSize="15sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="CarWashing"/>
+           <TextView
+               android:id="@+id/delivery"
+               android:background="@drawable/flow_btn"
+               android:padding="10sp"
+               android:textColor="@color/appBlue"
+               android:textSize="15sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Delivery"/>
+           <TextView
+               android:id="@+id/packing"
+               android:background="@drawable/flow_btn"
+               android:padding="10sp"
+               android:textColor="@color/appBlue"
+               android:textSize="15sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Packing"/>
+           <TextView
+               android:id="@+id/sweeping"
+               android:background="@drawable/flow_btn"
+               android:padding="10sp"
+               android:textColor="@color/appBlue"
+               android:textSize="15sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Sweeping"/>
+           <TextView
+               android:id="@+id/salesman"
+               android:background="@drawable/flow_btn"
+               android:padding="10sp"
+               android:textColor="@color/appBlue"
+               android:textSize="15sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Salesman"/>
+           <TextView
+               android:id="@+id/promotions"
+               android:background="@drawable/flow_btn"
+               android:padding="10sp"
+               android:textColor="@color/appBlue"
+               android:textSize="15sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Promotions"/>
+           <TextView
+               android:id="@+id/helper"
+               android:background="@drawable/flow_btn"
+               android:padding="10sp"
+               android:textColor="@color/appBlue"
+               android:textSize="15sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Helper"/>
+
+           <TextView
+               android:id="@+id/products_sampling"
+               android:background="@drawable/flow_btn"
+               android:padding="10sp"
+               android:textColor="@color/appBlue"
+               android:textSize="15sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="ProductsSampling"/>
+           <TextView
+               android:id="@+id/brochure_distribution"
+               android:background="@drawable/flow_btn"
+               android:padding="10sp"
+               android:textColor="@color/appBlue"
+               android:textSize="15sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="BrochureDistribution"/>
+           <TextView
+               android:id="@+id/products_branding"
+               android:background="@drawable/flow_btn"
+               android:padding="10sp"
+               android:textColor="@color/appBlue"
+               android:textSize="15sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="BrandingOfproducts"/>
+           <TextView
+               android:id="@+id/labour"
+               android:background="@drawable/flow_btn"
+               android:padding="10sp"
+               android:textColor="@color/appBlue"
+               android:textSize="15sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Labour"/>
+
+
+           <!--...-->
+
+       </com.nex3z.flowlayout.FlowLayout>
+
+
+</FrameLayout>

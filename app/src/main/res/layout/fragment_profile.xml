@@ -1,0 +1,364 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.training.jobifi.fragment.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout  android:id="@+id/dashArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+          android:id="@id/dashArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backImg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:alpha="0.6"
+                android:src="@color/appBlue" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileicon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/backImg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-100dp"
+                android:src="@drawable/logonew"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="10dp">
+
+                <ImageView
+                    android:background="@drawable/userprofile"
+                    android:id="@+id/imgview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/profileicon"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginRight="10dp"
+
+                android:background="#999" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_below="@id/dashArea"
+            android:id="@+id/lin"
+            android:layout_margin="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+
+                android:layout_weight="1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:id="@+id/totalj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Jobs "/>
+                <TextView
+android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/appBlue"
+                    android:layout_margin="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/totalj"
+                    android:id="@+id/totaljobs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Jobs Done"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:id="@+id/jobp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Job "/>
+                <TextView
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+android:fontFamily="@font/muli_extralight"
+                    android:textSize="17dp"
+                    android:textColor="@color/ColorRed"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/jobp"
+                    android:id="@+id/jobspref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last job done "/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/userdata"
+
+android:padding="10dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lin">
+
+
+            <LinearLayout
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                >
+
+
+                <TextView
+                    android:drawableTint="@color/ColorRed"
+android:drawableStart="@drawable/name_icon"
+                    android:drawablePadding="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="20sp"
+                    android:text="User Name"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/namecolumn"
+                    android:textColor="@color/appBlue"
+                    android:fontFamily="@font/muli_extralight"
+                    android:textSize="18dp"
+                    android:text="UserName"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/v1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/name"
+                android:background="#999"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <LinearLayout
+                android:id="@+id/city"
+                android:layout_marginTop="20sp"
+                android:layout_below="@id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                >
+
+
+                <TextView
+                    android:drawableTint="@color/ColorRed"
+                    android:drawableStart="@drawable/city_drawable"
+                    android:drawablePadding="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="20sp"
+                    android:text="City"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/citycolumn"
+                    android:textColor="@color/appBlue"
+                    android:fontFamily="@font/muli_extralight"
+                    android:textSize="18dp"
+                    android:text="city"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+            <View
+                android:id="@+id/v2"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/city"
+                android:background="#999"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:id="@+id/age"
+
+                android:layout_marginTop="20sp"
+                android:layout_below="@id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                >
+
+
+                <TextView
+                    android:drawableTint="@color/ColorRed"
+                    android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+                    android:drawablePadding="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="20dp"
+                    android:text="Age"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                   android:id="@+id/agecolumn"
+                    android:textColor="@color/appBlue"
+                    android:fontFamily="@font/muli_extralight"
+                     android:textSize="18dp"
+                    android:text="00 years"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+            <View
+                android:id="@+id/v3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/age"
+                android:background="#999"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:id="@+id/mobile"
+
+                android:layout_marginTop="20sp"
+                android:layout_below="@id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                >
+
+
+                <TextView
+                    android:drawableTint="@color/ColorRed"
+                    android:drawableStart="@drawable/phone_icon"
+                    android:drawablePadding="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="20dp"
+                    android:text="Mobile No."
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/mobilecolumn"
+                    android:textColor="@color/appBlue"
+                    android:fontFamily="@font/muli_extralight"
+                    android:textSize="18dp"
+                    android:text="XXXXXXXXXX"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/pickimg"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#fff"
+            android:text="Upload Profile Picture"
+            android:background="@color/ColorRed"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/userdata"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</FrameLayout>

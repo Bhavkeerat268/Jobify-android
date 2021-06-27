@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.training.jobifi.fragment.HistoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+           android:weightSum="1"
+            android:layout_marginBottom="30sp"
+            android:id="@+id/descLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="0.5"
+                android:layout_width="0sp"
+                android:layout_height="50sp">
+
+                <ImageView
+
+                    android:src="@drawable/reddot"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="44sp"
+                    android:layout_height="44sp"
+                    android:layout_marginLeft="10sp"
+                    />
+                <TextView
+                    android:textColor="#000"
+                    android:fontFamily="@font/muli_bold"
+                    android:text="To be Done"
+                    android:layout_marginLeft="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="0.5"
+                android:layout_width="0sp"
+                android:layout_height="50sp">
+
+                <ImageView
+
+                    android:src="@drawable/greenicon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="10sp"
+                    />
+                <TextView
+                    android:textColor="#000"
+                    android:fontFamily="@font/muli_bold"
+                    android:text="Completed"
+                    android:layout_marginLeft="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:id="@+id/noData"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="100sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:layout_gravity="center_horizontal"
+                android:layout_width="130sp"
+                android:layout_height="130sp"
+                android:src="@drawable/history"
+                />
+            <TextView
+                android:textColor="#000"
+                android:layout_margin="20sp"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No History Available"/>
+        </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_below="@id/descLayout"
+    android:id="@+id/recHis"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

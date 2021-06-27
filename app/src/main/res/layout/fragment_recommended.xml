@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context="com.training.jobifi.fragment.RecommendedFragment">
+    <androidx.cardview.widget.CardView
+
+
+
+
+        app:cardElevation="5sp"
+
+        android:layout_width="match_parent"
+        android:layout_height="60sp">
+    <com.google.android.material.appbar.AppBarLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+
+        <EditText
+
+
+android:hint="Search.."
+android:drawablePadding="10sp"
+            android:id="@+id/search"
+            android:background="#fff"
+           android:drawableRight="@drawable/closeicon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:padding="10sp">
+
+        </EditText>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    </androidx.cardview.widget.CardView>
+
+
+<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--        android:layout_marginTop="80sp"-->
+<!--        android:id="@+id/refresh"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+    <LinearLayout
+
+        android:id="@+id/noData"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_marginTop="100sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+
+            android:layout_gravity="center_horizontal"
+            android:layout_width="130sp"
+            android:layout_height="130sp"
+            android:src="@drawable/nodata"
+            />
+        <TextView
+            android:textColor="#000"
+            android:layout_margin="20sp"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Jobs Available"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="60sp"
+android:visibility="gone"
+        android:id="@+id/recyclerViewRec"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+        <ProgressBar
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/progressRec"/>
+
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_marginTop="60sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shimmer_layout">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <include
+                    layout="@layout/item_shimmer"/>
+                <include
+                    layout="@layout/item_shimmer"/>
+                <include
+                    layout="@layout/item_shimmer"/>
+                <include
+                    layout="@layout/item_shimmer"/>
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+<!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+</FrameLayout>

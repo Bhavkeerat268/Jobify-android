@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20sp"
+    android:elevation="10sp"
+    android:fadingEdge="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+
+    android:layout_marginBottom="20sp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/ColorRed"
+        android:text="JobName"
+        android:textSize="40sp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:id="@+id/JobName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+<LinearLayout
+    android:layout_marginTop="20sp"
+    android:layout_marginLeft="20sp"
+    android:id="@+id/l1"
+    android:layout_below="@id/JobName"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:fontFamily="@font/muli_bold"
+        android:textColor="@color/appBlue"
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="-> Booking Status"/>
+    <TextView
+        android:fontFamily="@font/muli_bold"
+        android:textColor="@color/appBlue"
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="-> Job Pay"/>
+    <TextView
+        android:fontFamily="@font/muli_bold"
+        android:textColor="@color/appBlue"
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="-> Job Timings"/>
+    <TextView
+        android:fontFamily="@font/muli_bold"
+        android:textColor="@color/appBlue"
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="-> Job Location"/>
+
+    <TextView
+        android:fontFamily="@font/muli_bold"
+        android:id="@+id/bookedBy"
+
+        android:textColor="@color/appBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="-> Booked By"/>
+    <TextView
+        android:fontFamily="@font/muli_bold"
+        android:id="@+id/bookerPhone"
+        android:textColor="@color/appBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="-> Booker Number"/>
+    <TextView
+        android:fontFamily="@font/muli_bold"
+        android:id="@+id/jobId"
+        android:textColor="@color/appBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="-> Job Id"/>
+
+</LinearLayout>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnConfirm"
+        android:layout_marginBottom="10sp"
+        android:textColor="#fff"
+        android:text="Confirm DOne"
+        android:background="#008000"
+        android:layout_marginTop="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/l1"
+        android:layout_width="150sp"
+        android:layout_height="50sp"/>
+    <ImageView
+        android:visibility="gone"
+        android:src="@drawable/greentick"
+        android:layout_marginTop="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/l1"
+        android:id="@+id/imgDone"
+        android:layout_width="70sp"
+        android:layout_height="70sp"/>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

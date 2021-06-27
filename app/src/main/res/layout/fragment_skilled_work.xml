@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.training.jobifi.fragment.SkilledWorkFragment">
+    <com.nex3z.flowlayout.FlowLayout
+        android:id="@+id/skilledFlow"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flChildSpacing="10sp"
+        app:flFlow="true"
+        app:flChildSpacingForLastRow="align"
+        app:flRowSpacing="10sp">
+
+        <TextView
+            android:id="@+id/tuitions"
+            android:background="@drawable/flow_btn"
+            android:padding="10sp"
+            android:textColor="@color/appBlue"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuitions"/>
+        <TextView
+            android:id="@+id/plumbing"
+            android:background="@drawable/flow_btn"
+            android:padding="10sp"
+            android:textColor="@color/appBlue"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plumbing"/>
+        <TextView
+            android:id="@+id/welding"
+            android:background="@drawable/flow_btn"
+            android:padding="10sp"
+            android:textColor="@color/appBlue"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welding"/>
+        <TextView
+            android:id="@+id/electrician"
+            android:background="@drawable/flow_btn"
+            android:padding="10sp"
+            android:textColor="@color/appBlue"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electrician"/>
+        <TextView
+            android:id="@+id/carpentering"
+            android:background="@drawable/flow_btn"
+            android:padding="10sp"
+            android:textColor="@color/appBlue"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carpentering"/>
+        <TextView
+            android:id="@+id/painter"
+            android:background="@drawable/flow_btn"
+            android:padding="10sp"
+            android:textColor="@color/appBlue"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Painter"/>
+
+
+
+
+
+
+    </com.nex3z.flowlayout.FlowLayout>
+
+
+</FrameLayout>

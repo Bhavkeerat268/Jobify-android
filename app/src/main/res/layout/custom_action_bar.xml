@@ -1,0 +1,58 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "60sp"
+    android:gravity = "center_vertical"
+    android:elevation="5sp"
+    android:padding = "10sp"
+    android:weightSum = "1">
+    <LinearLayout
+        android:layout_width = "0dp"
+        android:layout_height = "match_parent"
+        android:layout_weight = "0.6">
+        <androidx.cardview.widget.CardView
+            android:layout_width="50sp"
+            android:layout_height="40sp"
+            app:cardElevation="5sp"
+            app:cardCornerRadius="50sp"
+
+            >
+        <ImageView
+            android:padding="5sp"
+
+            android:scaleType="centerCrop"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:src = "@drawable/logonew"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+
+            android:id = "@+id/title"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginLeft = "10dp"
+            android:text = "Jobify"
+            android:textSize = "30sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor = "@color/appBlue"
+
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width = "0dp"
+        android:layout_height = "match_parent"
+        android:layout_marginRight = "10dp"
+        android:layout_weight = "0.4"
+        android:gravity = "end">
+        <ImageView
+            android:layout_width = "wrap_content"
+            android:layout_height = "match_parent"
+            android:src = "@drawable/ic_baseline_search_24" />
+        <ImageView
+            android:layout_width = "wrap_content"
+            android:layout_height = "match_parent"
+            android:layout_marginLeft = "20dp"
+            android:src = "@drawable/ic_baseline_settings_24" />
+    </LinearLayout>
+</LinearLayout>

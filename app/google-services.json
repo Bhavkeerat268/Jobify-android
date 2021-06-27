@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "925759922851",
+    "project_id": "jobifi-6e1d1",
+    "storage_bucket": "jobifi-6e1d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925759922851:android:f5a7eb0afded8be9071516",
+        "android_client_info": {
+          "package_name": "com.training.jobifi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925759922851-q5c61qbdtt1mpuro1iqi5dde33rf27oi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.training.jobifi",
+            "certificate_hash": "27ef6d4367ba4da91c148cca9cc9868b971600b4"
+          }
+        },
+        {
+          "client_id": "925759922851-lv8qu68i722ei8vt9hrfbkslmldaff36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx0HAhrnm0oJ7pANp70MSVzzzP_RY6F-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925759922851-lv8qu68i722ei8vt9hrfbkslmldaff36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,286 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.training.jobifi.fragment.ProvideJobFragment">
+
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+
+    <Button
+        android:id="@+id/btnPostAJob"
+
+        android:fontFamily="@font/montserrat"
+        android:textColor="#fff"
+        android:text="Post A Job"
+        android:layout_margin="20dp"
+        android:background="@color/appBlue"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:id="@+id/layoutPostJob"
+        android:orientation="vertical"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+
+
+        android:paddingLeft="7sp"
+        android:paddingRight="7sp"
+        android:paddingTop="13sp"
+        android:paddingBottom="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/container"
+        android:orientation="vertical">
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            app:hintEnabled="false"
+            android:id="@+id/tilJobName"
+            style="@style/OutlinedDrop"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20sp">
+
+
+            <AutoCompleteTextView
+
+                android:background="#fff"
+                android:id="@+id/actvJobName"
+                android:completionThreshold="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5sp"
+android:drawableStart="@drawable/plumber"
+                android:textColorHint="#000"
+
+                android:hint="Job Name." />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:alpha="1"
+            android:background="#80ffffff"
+            android:id="@+id/tilJobpay"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            app:hintEnabled="false"
+            android:layout_marginLeft="20sp"
+
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawablePadding="5sp"
+                android:background="#80ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_baseline_money_24"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:drawableTint="#000"
+                android:inputType="number"
+                android:hint="Job Pay"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:alpha="1"
+            android:background="#80ffffff"
+            android:id="@+id/tilTimings"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            app:hintEnabled="false"
+            android:layout_marginLeft="20sp"
+
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:focusableInTouchMode="false"
+                android:drawablePadding="5sp"
+                android:background="#80ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_baseline_access_time_24"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:drawableTint="#000"
+
+                android:hint="Timings"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            app:hintEnabled="false"
+            android:id="@+id/tilLocation"
+            style="@style/OutlinedDrop"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+
+            android:layout_marginRight="20sp">
+
+
+            <AutoCompleteTextView
+                android:textColorHint="#000"
+                android:background="#fff"
+                android:id="@+id/actvLocation"
+                android:completionThreshold="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/city_drawable"
+                android:drawablePadding="5sp"
+                android:padding="3sp"
+                android:drawableTint="#000"
+                android:hint="City." />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            app:hintEnabled="false"
+            android:id="@+id/tilAge"
+            style="@style/OutlinedDrop"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20sp">
+
+
+            <AutoCompleteTextView
+                android:textColorHint="#000"
+                android:background="#fff"
+                android:id="@+id/actvAge"
+                android:completionThreshold="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_age"
+                android:drawablePadding="5sp"
+                android:padding="3sp"
+                android:drawableTint="#000"
+                android:hint="Age." />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/tilGender"
+            style="@style/OutlinedDrop"
+            app:hintEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+
+            android:layout_marginRight="20sp">
+
+
+            <AutoCompleteTextView
+                android:inputType="none"
+                android:textColorHint="#000"
+                android:background="#fff"
+                android:id="@+id/actvGender"
+                android:completionThreshold="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_gender"
+                android:drawablePadding="5sp"
+                android:padding="3sp"
+                android:drawableTint="#000"
+                android:hint="Gender Pref" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/btnPost"
+        android:textColor="#fff"
+        android:text="Post"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/appBlue"
+        android:layout_width="150sp"
+        android:layout_height="50sp"/>
+</LinearLayout>
+    <Button
+        android:id="@+id/btnCheckPrev"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#fff"
+        android:text="Check Previous Job Status"
+        android:layout_margin="20dp"
+        android:background="@color/ColorRed"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+
+        android:id="@+id/noData"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_marginTop="100sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+
+            android:layout_gravity="center_horizontal"
+            android:layout_width="130sp"
+            android:layout_height="130sp"
+            android:src="@drawable/nodata"
+            />
+        <TextView
+            android:textColor="#000"
+            android:layout_margin="20sp"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Jobs Available"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPostJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+
+</ScrollView>

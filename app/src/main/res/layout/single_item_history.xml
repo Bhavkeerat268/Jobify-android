@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+
+
+    android:id="@+id/single_layot_his"
+
+    android:layout_width="match_parent"
+    android:layout_height="120sp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.cardview.widget.CardView
+        android:elevation="5sp"
+        app:cardCornerRadius="10sp"
+        android:id="@+id/imgcard"
+        android:layout_width="100sp"
+        android:layout_height="90sp"
+        android:layout_centerVertical="true"
+        android:layout_margin="15sp">
+    <ImageView
+        android:src="@drawable/logonew"
+
+       android:id="@+id/imgg"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+android:layout_toRightOf="@id/imgcard"
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="90sp">
+    <TextView
+        android:textColor="@color/ColorRed"
+        android:textSize="22sp"
+        android:fontFamily="@font/montserrat"
+        android:text="Job Name:Job"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jobName"/>
+
+
+
+        <TextView
+
+            android:textStyle="bold"
+            android:layout_below="@id/jobName"
+            android:text="Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jobtime"/>
+
+    <TextView
+
+       android:textColor="@color/appBlue"
+        android:layout_below="@id/jobtime"
+        android:text="Job Pay:JobPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jobpay"/>
+    </RelativeLayout>
+    <View
+        android:background="#999"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom= "true"
+        />
+
+</RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
